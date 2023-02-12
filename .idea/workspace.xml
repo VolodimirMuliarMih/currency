@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="295cee37-c5ee-4136-924e-07d18496c465" name="Changes" comment="">
+    <list default="true" id="295cee37-c5ee-4136-924e-07d18496c465" name="Changes" comment="create git ignor">
       <change afterPath="$PROJECT_DIR$/.gitignor" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/currency.iml" afterDir="false" />
@@ -101,10 +101,20 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="CUSTOM_BOOLEAN_PROPERTIES">
+                <map>
+                  <entry key="Show.Git.Branches" value="false" />
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="create git ignor" />
+    <option name="LAST_COMMIT_MESSAGE" value="create git ignor" />
   </component>
 </project>
