@@ -1,7 +1,6 @@
-from django.shortcuts import render
 from django.http import HttpResponse
-from currency.models import ContactUs
-from currency.models import Rate
+from django.shortcuts import render
+from currency.models import Rate, ContactUs
 
 
 def list_rates(request):
@@ -13,7 +12,7 @@ def list_rates(request):
     return HttpResponse(str(result))
 
 
-def listContactUs(request):
+def LContactUs(request):
     qs = ContactUs.objects.all()
     result = []
     for rate in qs:
@@ -21,4 +20,14 @@ def listContactUs(request):
             f'id:{rate.id}, email_from:{rate.email_from}, subject:{rate.subject}, massage:{rate.massage} <br>')
     return HttpResponse(str(result))
 
-# Create your views here.
+
+def tmplContactUs(request):
+    contact = ContactUs.objects.all()
+    context = {'contact': contact}
+    return render(request, 'contact_us.html', context)
+
+
+def tmpllist_rates(request):
+    base = Rate.objects.all()
+    context = {'base': base}
+    return render(request, 'rates.html', context)

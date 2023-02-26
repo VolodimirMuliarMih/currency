@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+<table cellspacing="5" cellpadding="10" border="2" bgcolor="white" width="500">
+    <caption>CURRENCY LIST</caption>
+    <thead>
+		<tr>
+			<th>ID</th>
+			<th>BUY</th>
+            <th>SELL</th>
+            <th>CURRENCY</th>
+            <th>SOURCE</th>
+            <th>CREATED</th>
+		</tr>
+     {% for index in base %}
+        <tfoot>
+		<tr>
+			<td>{{index.id}}</td>
+            <td>{{index.buy}}</td>
+			<td>{{index.sell}}</td>
+            <td>{{index.currency}}</td>
+            <td>{{index.source}}</td>
+            <td>{{index.created}}</td>
+		</tr>
+        <tfoot>
+     {% endfor %}
+{% endblock content %}
+
