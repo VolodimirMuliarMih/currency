@@ -4,11 +4,9 @@ backports.zoneinfo==0.2.1
 Django==4.1.7
 sqlparse==0.4.3
 django-extensions == 3.2.1
+django.shortcuts
 
 #flake8
 flake8
 flake8-builtins
 flake8-print
-
-
-Currency~=0.1.2
